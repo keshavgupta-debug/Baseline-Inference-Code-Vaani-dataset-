@@ -1,0 +1,30 @@
+# Secrets — never commit
+stipa_key.json
+*.json.key
+*-credentials.json
+
+# Evaluation outputs and caches
+stipa_baseline_eval/
+stipa_full_eval/
+**/audio_cache/
+baseline_predictions_detailed.csv
+baseline_summary_by_language.csv
+cross_split_distribution_and_correlations.csv
+
+# Model checkpoints
+*.nemo
+
+# Local data manifests (obtain separately)
+data/
+final_test.jsonl
+final_*.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+stipa_env/
+
+# NeMo clone (install separately)
+NeMo/
